@@ -1,0 +1,131 @@
+<!-- professor, eu nao sabia se precisava coocar o arquivo javascript, mas na duvida fiz como tava o tutorial.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipamentos — RSTec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="logo.png" alt="RSTec" width="125" height="100">
+      <ul style="display: flex;">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Equipamentos</a></li>
+        <li><a href="#">Manutenção</a></li>
+        <li><a href="#">Quem Somos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div style="position: relative; display: inline-block; width: 100%;">
+    <img style="width: 100%; height: 300px; display: block; object-fit: cover;"
+      src="https://images.unsplash.com/photo-1643660527098-559f89e45a92?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Equipamentos odontológicos">
+    <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(11,31,79,0.85), rgba(42,125,225,0.7));"></div>
+    <p style="font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; color: white; font-weight: 700; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); margin: 0; text-align: center; font-family: 'Poppins', sans-serif;">
+      Equipamentos Médicos e Odontológicos
+    </p>
+  </div>
+
+  <!-- Grade de cards -->
+  <div class="grade">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WyCZmULMbRXCcHzkK9c-j0XkEx_6UJWSZA&s" alt="Cadeira odontológica"
+      style="cursor: pointer;"
+      onclick="window.location.href='detalhes_site.html'">>
+      <div class="card-corpo">
+        <h3>Cadeira Odontológica</h3>
+        <p>Cadeira profissional com regulagem eletrônica e estofado anatômico para maior conforto do paciente.</p>
+        <button class="btn"
+          onclick="abrirModal('Cadeira Odontológica', 'Cadeira profissional com regulagem eletrônica e estofado anatômico. Ideal para consultórios modernos. Disponível para venda e locação. Entre em contato para orçamento.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMWw3FgIJ_8ZndWBXMjLxAEU2g8_AJfQtYA&s" alt="Raio-X odontológico">
+      <div class="card-corpo">
+        <h3>Raio-X Odontológico</h3>
+        <p>Equipamento de radiografia digital intraoral de alta precisão com baixa emissão de radiação.</p>
+        <button class="btn"
+          onclick="abrirModal('Raio-X Odontológico', 'Equipamento de radiografia digital intraoral de alta precisão com baixa emissão de radiação. Compatível com os principais softwares do mercado. Assistência técnica inclusa.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vqDzmw_gyTes5sn-Ue2TgwmQv2EK9yb-PA&s" alt="Autoclave">
+      <div class="card-corpo">
+        <h3>Autoclave</h3>
+        <p>Equipamento de esterilização a vapor com ciclos automáticos e sistema de segurança certificado.</p>
+        <button class="btn"
+          onclick="abrirModal('Autoclave', 'Equipamento de esterilização a vapor com ciclos automáticos e sistema de segurança certificado pela ANVISA. Capacidade de 12 a 21 litros. Manutenção preventiva disponível.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_4g_lYdDwjKd1qHDTk_-ZuwwHZkFzFIfHQ&s" alt="Compressor odontológico">
+      <div class="card-corpo">
+        <h3>Compressor Odontológico</h3>
+        <p>Compressor isento de óleo, silencioso e com reservatório de alta capacidade para uso contínuo.</p>
+        <button class="btn"
+          onclick="abrirModal('Compressor Odontológico', 'Compressor isento de óleo, silencioso e com reservatório de alta capacidade para uso contínuo em consultório. Manutenção preventiva e corretiva realizada pela equipe RSTec.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.dentalcremer.com.br/produtos/550/foto-emitter-a-fit-schuster-102619-dental-cremer.jpg" alt="Fotopolimerizador">
+      <div class="card-corpo">
+        <h3>Fotopolimerizador</h3>
+        <p>Aparelho de luz LED de alta potência para polimerização de resinas compostas com rapidez e eficiência.</p>
+        <button class="btn"
+          onclick="abrirModal('Fotopolimerizador', 'Aparelho de luz LED de alta potência para polimerização de resinas compostas. Bateria recarregável com autonomia de até 300 ciclos. Leve e ergonômico.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i0.wp.com/mogiteq.com.br/wp-content/uploads/2021/06/maxresdefault-4.jpg?fit=1280%2C720&ssl=1" alt="Ultrassom odontológico">
+      <div class="card-corpo">
+        <h3>Ultrassom Odontológico</h3>
+        <p>Aparelho de ultrassom para remoção de tártaro e raspagem com alta precisão e conforto ao paciente.</p>
+        <button class="btn"
+          onclick="abrirModal('Ultrassom Odontológico', 'Aparelho de ultrassom para remoção de tártaro e raspagem subgengival. Ponteiras intercambiáveis e regulagem de potência. Assistência técnica especializada RSTec.')">
+          Ver detalhes
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="fundo-modal" id="fundo-modal">
+    <div class="modal">
+      <button class="fechar" onclick="fecharModal()">✕</button>
+      <h2 id="modal-titulo">Título</h2>
+      <p id="modal-texto">Texto</p>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+
+</html>

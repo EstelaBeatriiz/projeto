@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef1f5;
+  padding: 2rem;
+}
+
+.pagina {
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border-left: 4px solid #2a7de1;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(11, 31, 79, 0.1);
+}
+
+.imagem-produto {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.pagina h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0b1f4f;
+  padding: 1.5rem 1.5rem 0.4rem;
+}
+
+.descricao {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0 1.5rem 1.25rem;
+  line-height: 1.6;
+}
+
+.pagina h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2a7de1;
+  padding: 0 1.5rem 0.5rem;
+  border-left: 3px solid #2a7de1;
+  margin-left: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+ul, ol {
+  padding: 0 1.5rem 1.5rem 3rem;
+}
+
+li {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.dica {
+  font-size: 0.85rem;
+  color: #444;
+  background-color: #e8f0fe;
+  border-left: 3px solid #2a7de1;
+  padding: 0.6rem 1rem;
+  margin: 0 1.5rem 1rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.dica code {
+  background-color: #dce3ed;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.82rem;
+}
